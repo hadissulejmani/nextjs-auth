@@ -3,6 +3,7 @@ import { auth, signOut } from "@/auth";
 import { Button } from "@/components/ui/button";
 import { redirect } from "next/navigation";
 import Image from "next/image";
+import SignOut from "../components/sign-out";
 
 const Dashboard = async () => {
     {
@@ -34,6 +35,7 @@ const Dashboard = async () => {
                     height={37}
                     className="rounded-full" />
             </div>
+            <SignOut />
         </div>
     );
 }

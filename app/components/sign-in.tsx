@@ -14,7 +14,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label"
 
-export function SignIn() {
+export default function SignIn() {
   return (
     <form
       action={async () => {
