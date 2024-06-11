@@ -12,7 +12,7 @@ const Dashboard = async () => {
         if (!session?.user) redirect("/");
     }
     const session = await auth();
-    
+
     if (!session?.user) redirect("/");
 
     return (
@@ -34,8 +34,9 @@ const Dashboard = async () => {
                     width={180}
                     height={37}
                     className="rounded-full" />
+
+                <SignOut />
             </div>
-            <SignOut />
         </div>
     );
 }
