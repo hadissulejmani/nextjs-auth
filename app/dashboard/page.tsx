@@ -2,7 +2,7 @@
 import { auth, signOut } from "@/auth";
 import { Button } from "@/components/ui/button";
 import { redirect } from "next/navigation";
-
+import Image from "next/image";
 
 const Dashboard = async () => {
     {
