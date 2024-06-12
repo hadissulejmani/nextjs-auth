@@ -13,14 +13,12 @@ import {
 
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label"
+import { signInWithGoogle } from "../lib/actions";
 
 export default function SignIn() {
   return (
     <form
-      action={async () => {
-        "use server"
-        await signIn("google")
-      }}
+      action={signInWithGoogle}
     >
       <Card className="mx-auto max-w-sm">
         <CardHeader>
