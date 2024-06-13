@@ -2,10 +2,10 @@ import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 
-export function ButtonAsChild() {
+export function ButtonAsChild({ path: string = "/sign-in" }) {
   return (
     <Button asChild>
-      <Link href="/sign-in">Login</Link>
+      <Link href={ path }>Login</Link>
     </Button>
   )
 }
