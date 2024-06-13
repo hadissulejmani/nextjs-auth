@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { ButtonAsChild } from "./components/button-as-child";
 
 export default function Home() {
   return (
@@ -7,6 +9,9 @@ export default function Home() {
         <p className="fixed left-0 top-20 flex w-full justify-center">
           Authentication with Google App
         </p>
+        <div className="relative flex justify-center">
+          <ButtonAsChild />
+        </div>
         </div>
     </main>
   );
