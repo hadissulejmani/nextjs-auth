@@ -1,11 +1,15 @@
 import Link from "next/link"
-
 import { Button } from "@/components/ui/button"
 
-export function ButtonAsChild({ path: string = "/sign-in" }) {
+type ButtonAsChildProps = {
+  path?: string;
+  value?: string;
+}
+
+export function ButtonAsChild({ path = "/sign-in", value = "Login" }: ButtonAsChildProps) {
   return (
     <Button asChild>
-      <Link href={ path }>Login</Link>
+      <Link href={path}>{value}</Link>
     </Button>
   )
 }
